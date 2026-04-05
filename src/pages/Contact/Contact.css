@@ -1,0 +1,131 @@
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.contact-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-info-card-premium {
+    background-color: var(--color-white);
+    padding: 50px 40px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-info-card-premium h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--color-secondary);
+}
+
+.contact-info-card-premium p {
+    color: var(--color-text-light);
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.contact-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-detail-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.detail-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(232, 101, 26, 0.1);
+    color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.detail-text h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+}
+
+.detail-text p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-bottom: 0;
+}
+
+.map-card-premium {
+    padding: 10px;
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+
+    .contact-sidebar {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info-card-premium {
+        padding: 30px 20px;
+        text-align: left;
+    }
+
+    .contact-details-list {
+        align-items: flex-start;
+        width: 100%;
+        gap: 25px;
+    }
+
+    .contact-detail-item {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .detail-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .detail-text {
+        width: calc(100% - 60px);
+        min-width: 0;
+    }
+
+    .detail-text h4 {
+        font-size: 0.8rem;
+    }
+
+    .detail-text p {
+        font-size: 1rem;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+}
