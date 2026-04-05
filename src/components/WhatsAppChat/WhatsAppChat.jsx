@@ -22,8 +22,7 @@ const WhatsAppChat = () => {
     return (
         <div className="whatsapp-chat-container">
             <div className={`whatsapp-message-bubble ${showTooltip ? 'show-mobile' : ''}`}>
-                <span className="whatsapp-phone">{displayNumber}</span>
-                <span className="whatsapp-hint">Hi! Tap again to chat</span>
+                <span className="whatsapp-hint">Hi! How may I help you?</span>
             </div>
             <a
                 href={whatsappUrl}
