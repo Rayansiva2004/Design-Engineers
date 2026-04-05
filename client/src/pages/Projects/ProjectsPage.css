@@ -1,0 +1,220 @@
+.projects-page {
+    overflow: hidden;
+}
+
+/* Hero styles moved to global.css */
+.projects-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.categories-filter {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--color-bg-light);
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.filter-btn {
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    border: none;
+    background: transparent;
+    color: var(--color-text-light);
+}
+
+.filter-btn:hover {
+    color: var(--color-primary);
+}
+
+.filter-btn.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 4px 15px rgba(232, 101, 26, 0.2);
+}
+
+.projects-masonry {
+    columns: 3;
+    column-gap: 30px;
+}
+
+.project-card-v2 {
+    break-inside: avoid;
+    margin-bottom: 30px;
+}
+
+.project-img-wrapper {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    background-color: var(--color-bg-light);
+}
+
+.project-card-v2.tall .project-img-wrapper {
+    aspect-ratio: 4/6 !important;
+}
+
+.project-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.project-card-v2:hover .project-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.project-overlay-v2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 30px;
+    opacity: 0;
+    transition: var(--transition-smooth);
+    pointer-events: none;
+}
+
+.project-card-v2:hover .project-overlay-v2 {
+    opacity: 1;
+}
+
+.project-meta {
+    color: var(--color-white);
+}
+
+.project-category-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.project-meta h3 {
+    font-size: 1.4rem;
+    color: var(--color-white);
+    margin-bottom: 5px;
+}
+
+.project-loc {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.project-arrow-btn {
+    width: 45px;
+    height: 45px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(20px);
+    transition: var(--transition-smooth);
+}
+
+.project-card-v2:hover .project-arrow-btn {
+    transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+    .projects-masonry {
+        columns: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-masonry {
+        columns: 1;
+    }
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    pointer-events: auto;
+
+}
+
+.lightbox-img {
+    width: auto;
+    height: auto;
+    max-width: 95vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.lightbox-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+
+.lightbox-nav-btn:hover {
+    background: var(--color-primary);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-nav-btn.left {
+    left: 20px;
+}
+
+.lightbox-nav-btn.right {
+    right: 20px;
+}
