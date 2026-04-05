@@ -69,6 +69,19 @@
     background-color: #128C7E;
 }
 
+.whatsapp-phone {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #25D366;
+    display: block;
+}
+
+.whatsapp-hint {
+    font-size: 0.78rem;
+    color: #777;
+    display: block;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
     .whatsapp-chat-container {
@@ -77,16 +90,26 @@
     }
 
     .whatsapp-btn {
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
     }
 
     .whatsapp-icon {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .whatsapp-message-bubble {
         display: none;
-        /* Hide bubble on mobile for cleaner look */
+        flex-direction: column;
+        gap: 4px;
+        white-space: normal;
+        min-width: 160px;
+        text-align: center;
+    }
+
+    .whatsapp-message-bubble.show-mobile {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
