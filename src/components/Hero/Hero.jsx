@@ -107,19 +107,6 @@ const Hero = () => {
                         </Link>
                     </motion.div>
                 </motion.div>
-                <motion.div
-                    className="hero-scroll-indicator"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1.2, duration: 1 }}
-                >
-                    <div className="scroll-circle">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                            <path d="M7 13l5 5 5-5M12 6v12" />
-                        </svg>
-                    </div>
-                    <span className="scroll-text">Scroll Down</span>
-                </motion.div>
             </div>
         </section>
     );
