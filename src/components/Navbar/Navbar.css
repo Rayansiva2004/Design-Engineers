@@ -288,6 +288,10 @@
 }
 
 @media (max-width: 992px) {
+    .navbar-scrolled {
+        height: 80px;
+    }
+
     .navbar-links {
         display: none;
     }
@@ -295,4 +299,30 @@
     .mobile-toggle {
         display: flex;
     }
+
+    .nav-logo-img {
+        height: 50px;
+    }
+
+    .navbar-logo {
+        font-size: 1.2rem;
+        gap: 8px;
+    }
 }
+
+@media (max-width: 480px) {
+    .nav-logo-img {
+        height: 48px;
+    }
+
+    .navbar-logo {
+        font-size: 1.1rem;
+        gap: 6px;
+    }
+
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+    }
+}
