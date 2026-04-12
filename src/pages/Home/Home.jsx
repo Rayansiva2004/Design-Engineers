@@ -6,7 +6,7 @@ import SEO from '../../components/SEO';
 import './Home.css';
 import { Link } from "react-router-dom";
 import { servicesData } from '../../data/servicesData';
-import aboutImg from '../../assets/images/house1.jpg';
+import aboutImg from '../../assets/images/house2.jpg';
 import ctaBg from '../../assets/images/home-b6.png';
 
 const Home = () => {
@@ -46,22 +46,8 @@ const Home = () => {
                 <div className="container">
                     <div className="about-grid">
                         <motion.div
-                            className="about-image animate-fade-left"
-                            {...slideLeft}
-                        >
-                            <img
-                                src={aboutImg}
-                                alt="Modern architecture office workspace of Design Engineers"
-                                loading="lazy"
-                            />
-                            <div className="experience-badge">
-                                <span className="years">15+</span>
-                                <span className="text">Years of Experience</span>
-                            </div>
-                        </motion.div>
-                        <motion.div
                             className="about-content"
-                            {...slideRight}
+                            {...slideLeft}
                         >
                             <span className="section-label">Who We Are</span>
                             <h2 className="section-title">Visionary Designs, Practical Solutions</h2>
@@ -74,6 +60,20 @@ const Home = () => {
                                 functional, sustainable, and awe-inspiring reality.
                             </p>
                             <Link to="/about#top" className="btn btn-primary">Learn More</Link>
+                        </motion.div>
+                        <motion.div
+                            className="about-image animate-fade-right"
+                            {...slideRight}
+                        >
+                            <img
+                                src={aboutImg}
+                                alt="Modern architecture office workspace of Design Engineers"
+                                loading="lazy"
+                            />
+                            <div className="experience-badge">
+                                <span className="years">15+</span>
+                                <span className="text">Years of Experience</span>
+                            </div>
                         </motion.div>
                     </div>
                 </div>
