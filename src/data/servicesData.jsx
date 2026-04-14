@@ -216,12 +216,12 @@ export const servicesData = [
     },
     {
         id: "cad-design",
-        title: "2D CAD Design Services",
-        shortDesc: "Professional 2D CAD drafting and technical drawings including architectural, electrical, and plumbing plans for construction projects.",
+        title: "3D Elevations",
+        shortDesc: "Professional 3D building elevations and technical drawings including architectural, electrical, and plumbing plans for construction projects.",
         fullDesc: [
-            "DESIGN ENGINEERS is an engineering company offering 2D line drawing and technical drawing services (Civil & Electrical) to individuals and businesses. All projects are considered, regardless of their size or complexity. We aim to provide a professional, friendly, and reliable service to all clients, delivering results that exceed expectations.",
+            "DESIGN ENGINEERS is an engineering company offering 3D elevation drawing and technical drawing services (Civil & Electrical) to individuals and businesses. All projects are considered, regardless of their size or complexity. We aim to provide a professional, friendly, and reliable service to all clients, delivering results that exceed expectations.",
             "We work closely with our clients to clearly understand their project requirements and ensure the project goals are achieved from the very beginning. Our team is committed to maintaining clear communication and providing efficient solutions throughout the design process.",
-            "Our 2D CAD Design Services offer unparalleled precision for complex engineering requirements. We specialize in creating high-quality, professional technical drawings that serve as the blueprint for success in civil and electrical engineering projects.",
+            "Our 3D Elevations offer unparalleled precision for complex engineering requirements. We specialize in creating high-quality, professional technical drawings that serve as the blueprint for success in civil and electrical engineering projects.",
             "From conceptual sketches to detailed construction documentation, our designs adhere to international standards and local regulations. With a strong focus on accuracy, quality, and timely delivery, we ensure every design meets industry standards while supporting smooth project execution."
         ],
         icon: (
