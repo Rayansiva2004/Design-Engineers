@@ -16,6 +16,8 @@ import structural from "../assets/images/structural1.jpg";
 import structural2 from "../assets/images/structural2.webp";
 import structural3 from "../assets/images/structural3.jpg";
 import estimation from "../assets/images/estimation1.jpg";
+import electPlumbHero from "../assets/images/electrical-plumbing-hero.jpg";
+import electPlumbDiagram from "../assets/images/electrical-plumbing-diagram.jpg";
 
 
 export const servicesData = [
@@ -327,8 +329,8 @@ export const servicesData = [
             "Reduced Maintenance & Long-Term Reliability",
             "Future-Ready and Scalable Layouts"
         ],
-        heroImage: "https://images.unsplash.com/photo-1558489580-faa74691fdc5?q=80&w=1920&auto=format&fit=crop",
-        projectImage: "https://images.unsplash.com/photo-1581092921461-7d157390fd1b?q=80&w=1200&auto=format&fit=crop",
+        heroImage: electPlumbHero,
+        projectImage: electPlumbDiagram,
         secondProjectImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
         ctaText: "Plan Your Infrastructure"
     },
