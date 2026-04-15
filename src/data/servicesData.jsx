@@ -332,8 +332,8 @@ export const servicesData = [
             "Reduced Maintenance & Long-Term Reliability",
             "Future-Ready and Scalable Layouts"
         ],
-        heroImage: electPlumbHero,
-        projectImage: electPlumbDiagram,
+        heroImage: electPlumbDiagram,
+        projectImage: electPlumbHero,
         secondProjectImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
         ctaText: "Plan Your Infrastructure"
     },
@@ -359,8 +359,8 @@ export const servicesData = [
             "Reduced Project Delays",
             "High Accountability & Transparency"
         ],
-        heroImage: selfCertHero,
-        projectImage: selfCertProject,
+        heroImage: selfCertProject,
+        projectImage: selfCertHero,
         secondProjectImage: selfCertSecond,
         ctaText: "Get Certified Approval"
     }
