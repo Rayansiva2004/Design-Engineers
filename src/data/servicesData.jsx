@@ -18,6 +18,9 @@ import structural3 from "../assets/images/structural3.jpg";
 import estimation from "../assets/images/estimation1.jpg";
 import electPlumbHero from "../assets/images/electrical-plumbing-hero.jpg";
 import electPlumbDiagram from "../assets/images/electrical-plumbing-diagram.jpg";
+import selfCertHero from "../assets/images/self-cert-hero.jpg";
+import selfCertProject from "../assets/images/self-cert-project.jpg";
+import selfCertSecond from "../assets/images/self-cert-second.jpg";
 
 
 export const servicesData = [
@@ -356,9 +359,9 @@ export const servicesData = [
             "Reduced Project Delays",
             "High Accountability & Transparency"
         ],
-        heroImage: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=1920&auto=format&fit=crop",
-        projectImage: "https://images.unsplash.com/photo-1589255061943-eaa0da5a6441?q=80&w=1200&auto=format&fit=crop",
-        secondProjectImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop",
+        heroImage: selfCertHero,
+        projectImage: selfCertProject,
+        secondProjectImage: selfCertSecond,
         ctaText: "Get Certified Approval"
     }
 ];
