@@ -331,6 +331,33 @@ export const servicesData = [
         projectImage: "https://images.unsplash.com/photo-1581092921461-7d157390fd1b?q=80&w=1200&auto=format&fit=crop",
         secondProjectImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
         ctaText: "Plan Your Infrastructure"
+    },
+    {
+        id: "self-certification",
+        title: "Self Certification Approvals",
+        shortDesc: "Streamlined approval process through professional certification, ensuring compliance with building codes and safety standards for faster project timelines.",
+        fullDesc: [
+            "Self Certification Approvals streamline the approval process by allowing qualified design engineers to certify that project plans comply with applicable building codes, regulations, and safety standards. This approach reduces dependency on lengthy external approvals and accelerates the overall project timeline. By taking professional responsibility, engineers ensure that designs meet all required norms before execution begins.",
+            "Through self certification, every aspect of the design is carefully reviewed for accuracy, compliance, and quality. Engineers verify structural integrity, electrical and plumbing systems, and overall safety measures to ensure the project adheres to regulatory guidelines. This process not only speeds up approvals but also maintains a high level of accountability and precision.",
+            "By adopting self certification approvals, projects benefit from faster processing, reduced delays, and improved efficiency. It enables seamless coordination between design and execution while ensuring transparency and reliability. This method is ideal for delivering projects on time without compromising on safety, quality, or compliance."
+        ],
+        icon: (
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <polyline points="9 12 11 14 15 10" />
+            </svg>
+        ),
+        features: [
+            "Faster Approval Process",
+            "Compliance with Regulations & Standards",
+            "Engineer-Certified Quality Assurance",
+            "Reduced Project Delays",
+            "High Accountability & Transparency"
+        ],
+        heroImage: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=1920&auto=format&fit=crop",
+        projectImage: "https://images.unsplash.com/photo-1589255061943-eaa0da5a6441?q=80&w=1200&auto=format&fit=crop",
+        secondProjectImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop",
+        ctaText: "Get Certified Approval"
     }
 ];
 

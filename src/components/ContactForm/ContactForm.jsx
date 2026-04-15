@@ -90,6 +90,7 @@ const ContactForm = () => {
                             <option value="3D Evaluations">3D Elevations</option>
                             <option value="3D Design Services">3D Design Services</option>
                             <option value="Electrical & Plumbing Layouts">Electrical & Plumbing Layouts</option>
+                            <option value="Self Certification Approvals">Self Certification Approvals</option>
                             <option value="Commercial Design">Commercial Design</option>
                             <option value="Graphic Design">Graphic Design</option>
                             <option value="CMDA / DTCP Building and Layout Approvals">CMDA / DTCP Building and Layout Approvals</option>
