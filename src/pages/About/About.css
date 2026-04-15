@@ -198,17 +198,17 @@
 
 .owner-grid {
     display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 60px;
+    grid-template-columns: 180px 1fr;
+    gap: 40px;
     align-items: flex-start;
 }
 
 .owner-image img {
-    width: 320px;
-    height: 320px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 16px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .owner-content h2 {

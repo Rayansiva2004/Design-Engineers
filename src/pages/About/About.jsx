@@ -156,7 +156,7 @@ const About = () => {
                         <motion.div className="owner-content" {...slideRight}>
                             <span className="section-label">Founder</span>
                             <h2>B.Fazil Hussain</h2>
-                            <h4>Counsulting Civil Engineer </h4>
+                            <h4>Consulting Civil Engineer </h4>
 
                             <p>
                                 B. Fazil Hussain is a seasoned professional dedicated to delivering innovative and sustainable engineering solutions With over 15 years of experience in civil engineering, architecture, and structural design. He founded his engineering practice with a clear vision of combining technical excellence with modern architectural concepts.
