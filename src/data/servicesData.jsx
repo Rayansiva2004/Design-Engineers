@@ -304,6 +304,33 @@ export const servicesData = [
         projectImage: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop&fm=webp",
         secondProjectImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop&fm=webp",
         ctaText: "Design Your Dream Home"
+    },
+    {
+        id: "electrical-plumbing",
+        title: "Electrical & Plumbing Layouts",
+        shortDesc: "Essential design engineering components ensuring building functionality, safety, and efficiency through strategic electrical and plumbing planning.",
+        fullDesc: [
+            "Electrical and Plumbing Layouts are essential components of design engineering, ensuring that a building functions efficiently and safely. These layouts involve the strategic planning of electrical systems such as wiring, lighting, and power distribution, along with plumbing systems including water supply, drainage, and sanitation. Proper design at this stage helps create a strong foundation for smooth installation and long-term performance.",
+            "With a focus on accuracy and efficiency, these layouts are carefully developed to optimize space and resource usage. Electrical systems are designed to handle load requirements safely, while plumbing systems ensure proper water flow and waste management. Attention to detail during the design phase minimizes errors, prevents future issues, and reduces maintenance costs.",
+            "By integrating electrical and plumbing systems seamlessly into the overall building design, engineers ensure functionality, convenience, and sustainability. These layouts are created in compliance with industry standards and are adaptable for future expansions or upgrades, making them reliable and future-ready solutions for any project."
+        ],
+        icon: (
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                <path d="M12 10a4 4 0 1 1-4 4" />
+            </svg>
+        ),
+        features: [
+            "Safe & Standard-Compliant Design",
+            "Efficient Power & Water Management",
+            "Optimized Space Utilization",
+            "Reduced Maintenance & Long-Term Reliability",
+            "Future-Ready and Scalable Layouts"
+        ],
+        heroImage: "https://images.unsplash.com/photo-1558489580-faa74691fdc5?q=80&w=1920&auto=format&fit=crop",
+        projectImage: "https://images.unsplash.com/photo-1581092921461-7d157390fd1b?q=80&w=1200&auto=format&fit=crop",
+        secondProjectImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
+        ctaText: "Plan Your Infrastructure"
     }
 ];
 
