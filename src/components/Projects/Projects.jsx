@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Projects.css';
 
 // Local Image Imports
@@ -137,21 +138,44 @@ const Projects = ({ showAll = false }) => {
 
                 <div className="projects-grid">
                     {displayedProjects.map((project, index) => (
-                        <div
-                            key={index}
-                            className={`project-card animate-scale delay-${(index % 3) + 1}${project.featured ? ' featured' : ''}`}
-                        >
-                            <img src={project.isLocal ? project.image : project.image} alt={project.name} loading="lazy" />
-                            <div className="project-overlay">
-                                <span className="project-category">{project.category}</span>
-                                <h3 className="project-name">{project.name}</h3>
-                                <p className="project-location">{project.location}</p>
+                        <div key={index} className={`project-card-wrapper${project.featured ? ' featured-wrapper' : ''}`}>
+                            <div
+                                className={`project-card animate-scale delay-${(index % 3) + 1}${project.featured ? ' featured' : ''}`}
+                            >
+                                <img src={project.isLocal ? project.image : project.image} alt={project.name} loading="lazy" />
+                                <div className="project-overlay">
+                                    <span className="project-category">{project.category}</span>
+                                    <h3 className="project-name">{project.name}</h3>
+                                    <p className="project-location">{project.location}</p>
+                                </div>
+                                <div className="project-arrow">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                        <path d="M7 17L17 7M17 7H7M17 7v10" />
+                                    </svg>
+                                </div>
                             </div>
-                            <div className="project-arrow">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            <a
+                                href="https://www.instagram.com/design_engineers_09"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-instagram-link"
+                            >
+                                <svg className="insta-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="url(#instaGradHome)" strokeWidth="2" fill="none"/>
+                                    <circle cx="12" cy="12" r="4" stroke="url(#instaGradHome)" strokeWidth="2" fill="none"/>
+                                    <circle cx="17.5" cy="6.5" r="1" fill="url(#instaGradHome)"/>
+                                    <defs>
+                                        <linearGradient id="instaGradHome" x1="0" y1="24" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stopColor="#f09433"/>
+                                            <stop offset="25%" stopColor="#e6683c"/>
+                                            <stop offset="50%" stopColor="#dc2743"/>
+                                            <stop offset="75%" stopColor="#cc2366"/>
+                                            <stop offset="100%" stopColor="#bc1888"/>
+                                        </linearGradient>
+                                    </defs>
                                 </svg>
-                            </div>
+                                <span>design_engineers_09</span>
+                            </a>
                         </div>
                     ))}
                 </div>
