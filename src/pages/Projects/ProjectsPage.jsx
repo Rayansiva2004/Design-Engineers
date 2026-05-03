@@ -142,32 +142,37 @@ const ProjectsPage = () => {
                                             </Link>
                                         </div>
                                     </div>
-                                    <a
-                                        href="https://www.instagram.com/design_engineers_09"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="project-instagram-link"
-                                    >
-                                        <svg className="insta-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="url(#instaGrad)" strokeWidth="2" fill="none"/>
-                                            <circle cx="12" cy="12" r="4" stroke="url(#instaGrad)" strokeWidth="2" fill="none"/>
-                                            <circle cx="17.5" cy="6.5" r="1" fill="url(#instaGrad)"/>
-                                            <defs>
-                                                <linearGradient id="instaGrad" x1="0" y1="24" x2="24" y2="0" gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0%" stopColor="#f09433"/>
-                                                    <stop offset="25%" stopColor="#e6683c"/>
-                                                    <stop offset="50%" stopColor="#dc2743"/>
-                                                    <stop offset="75%" stopColor="#cc2366"/>
-                                                    <stop offset="100%" stopColor="#bc1888"/>
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                        <span>design_engineers_09</span>
-                                    </a>
                                 </motion.div>
                             ))}
                         </AnimatePresence>
                     </motion.div>
+
+                    {/* Instagram CTA — centered between last project and footer */}
+                    <div className="projects-insta-cta">
+                        <a
+                            href="https://www.instagram.com/design_engineers_09"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="projects-insta-anchor"
+                        >
+                            <svg className="projects-insta-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="url(#instaGradPage)" strokeWidth="2.2" fill="none"/>
+                                <circle cx="12" cy="12" r="4" stroke="url(#instaGradPage)" strokeWidth="2.2" fill="none"/>
+                                <circle cx="17.5" cy="6.5" r="1.2" fill="url(#instaGradPage)"/>
+                                <defs>
+                                    <linearGradient id="instaGradPage" x1="0" y1="24" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stopColor="#f09433"/>
+                                        <stop offset="25%" stopColor="#e6683c"/>
+                                        <stop offset="50%" stopColor="#dc2743"/>
+                                        <stop offset="75%" stopColor="#cc2366"/>
+                                        <stop offset="100%" stopColor="#bc1888"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>design_engineers_09</span>
+                        </a>
+                    </div>
+
                 </div>
             </section>
             {selectedIndex !== null && (

@@ -219,28 +219,44 @@
     right: 20px;
 }
 
-/* Instagram link below project cards */
-.project-instagram-link {
+/* ── Instagram CTA at bottom of Projects page ── */
+.projects-insta-cta {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 8px;
-    margin-top: 12px;
+    align-items: center;
+    padding: 56px 0 40px;
+}
+
+.projects-insta-anchor {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
     text-decoration: none;
-    color: #cc2366;
-    font-size: 0.82rem;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    background: linear-gradient(135deg, rgba(240,148,51,0.08), rgba(188,24,136,0.08));
+    border: 1.5px solid rgba(220,39,67,0.25);
+    border-radius: 50px;
+    padding: 16px 36px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.project-instagram-link:hover {
-    opacity: 0.8;
-    transform: translateY(-2px);
+.projects-insta-anchor:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(188, 24, 136, 0.18);
+    border-color: rgba(220,39,67,0.5);
 }
 
-.insta-icon {
-    width: 20px;
-    height: 20px;
+.projects-insta-anchor span {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.projects-insta-icon {
+    width: 32px;
+    height: 32px;
     flex-shrink: 0;
-}
+}
